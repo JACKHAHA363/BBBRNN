@@ -1,6 +1,11 @@
 # Bayesian Recurrent Network Implementation
 
+This code try to reproduce the result in this paper(https://arxiv.org/abs/1704.02798). In order to run the experienment just run:
+`python main.py --BBB --cuda`
+with posterior sharpening:
+`python main.py --BBB --cuda --sharpen`
+For the baseline result, run
+`python main.py --cuda`
 
-
-In order to run the rnn bbb, go to the directory word language model and run:
-python main.py --epochs 6 --type BBB --cuda
+# Result
+The baseline result is consistent with the paper, but the improvement of bayesian backprop is minor. 
